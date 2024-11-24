@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="intro-section">
+        <h1>Welcome to the Coding Quiz!</h1>
+        <pre>
+            Test your coding knowledge by taking our short quiz. Scroll down to get started and see how much you know!
+
+        <strong>PYTHON</strong>
+
+            Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation.[32]
+
+            Python is dynamically typed and garbage-collected. It supports multiple programming paradigms, including structured (particularly procedural), object-oriented and functional programming. It is often described as a "batteries included" language due to its comprehensive standard library.[33][34]
+            
+            Guido van Rossum began working on Python in the late 1980s as a successor to the ABC programming language and first released it in 1991 as Python 0.9.0.[35] Python 2.0 was released in 2000. Python 3.0, released in 2008, was a major revision not completely backward-compatible with earlier versions. Python 2.7.18, released in 2020, was the last release of Python 2.[36]
+            
+            Python consistently ranks as one of the most popular programming languages, and has gained widespread use in the machine learning community.[37][38][39][40]
+        </pre>
+    </div>
+    
+    <div class="quiz-container">
+        <button class="start-button">Start Quiz</button>
+
+        <div class="quiz-section hidden">
+            <div class="question-container">
+                <p id="question">Question will appear here...</p>
+                <div id="answers">
+                    <!-- Answers will be dynamically generated -->
+                </div>
+            </div>
+            <button id="next-button" class="hidden">Next</button>
+        </div>
+
+        <div class="result-section hidden">
+            <h2>Quiz Complete!</h2>
+            <p>You scored <span id="score"></span> out of <span id="total-questions"></span>.</p>
+            <form id="email-form">
+                <input type="email" id="email" placeholder="Enter your email" required>
+                <button type="submit">Send Results</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
